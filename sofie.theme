@@ -5,3 +5,19 @@
  *
  * Place your custom PHP code in this file.
  */
+
+ 
+ 
+function foo_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id = NULL) {
+ // Work-around for a core bug affecting admin themes. See issue #943212.
+ if (isset($form_id)) {
+   return;
+ }
+
+ $form['sofie_background'] = array(
+   '#type'          => 'textfield',
+   '#title'         => t('Background'),
+   '#default_value' => theme_get_setting('sofie_background'),
+   '#description'   => t("Change the backgound of this site"),
+ );
+}

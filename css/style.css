@@ -9590,18 +9590,36 @@ p:last-child,
 
 /* line 75, ../sass/_overrides.scss */
 .main-container {
-  max-width: 75%;
+  max-width: 80%;
+  padding: 15px;
+  border-radius: 25px;
 }
 
-/* line 79, ../sass/_overrides.scss */
+/* line 81, ../sass/_overrides.scss */
 header {
   width: 100%;
   padding: 0;
 }
 
-/* line 84, ../sass/_overrides.scss */
+/* line 87, ../sass/_overrides.scss */
+.main-container {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 91, ../sass/_overrides.scss */
+.region-footer {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/* line 93, ../sass/_overrides.scss */
+.region-footer a:hover {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* line 98, ../sass/_overrides.scss */
 body {
-  background: transparent url("themes/sofie/images/background_image.jpg") no-repeat fixed center center/cover;
+  background: transparent url("../images/background_image.jpg") no-repeat fixed center center;
+  background-size: cover;
   height: 100%;
   width: 100%;
+  margin-top: 0px;
 }

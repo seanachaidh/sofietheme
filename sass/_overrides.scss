@@ -73,16 +73,34 @@ p:last-child,
 }
 
 .main-container {
-	max-width: 75%;
+	max-width: 80%;
+	padding: 15px;
+	border-radius: 25px;
 }
 
 header {
 	width: 100%;
 	padding: 0;
+	//margin-top: 0px;
+}
+
+.main-container {
+	background-color: rgba(255,255,255,0.7);
+}
+
+.region-footer {
+	background-color: rgba(255,255,255,0.7);
+	a:hover {
+		background-color: rgba(255,255,255,0.7) !important;
+	}
 }
 
 body {
-    background: rgba(0, 0, 0, 0) url("themes/sofie/images/background_image.jpg") no-repeat fixed center center / cover ;
-    height: 100%;
-    width: 100%;
+	//todo Ik moet nog een nakijken of deze code wel goed is.
+	background: rgba(0, 0, 0, 0) url("../images/background_image.jpg") no-repeat fixed center center;
+	background-size: cover ;
+	height: 100%;
+	width: 100%;
+	margin-top: 0px;
 }
+
